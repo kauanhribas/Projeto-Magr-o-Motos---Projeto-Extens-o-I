@@ -7,7 +7,6 @@ O projeto será desenvolvido para facilitar o controle das entradas e saídas fi
 A aplicação será pensada principalmente para uso em celulares, com uma interface responsiva e possibilidade de instalação como PWA, oferecendo uma experiência semelhante à de um aplicativo.
 
 Funcionalidades previstas
-
 -Cadastro de clientes e motocicletas;
 -Registro de serviços realizados;
 -Cadastro e vínculo de peças aos serviços;
