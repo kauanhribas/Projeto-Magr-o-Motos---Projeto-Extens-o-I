@@ -1,98 +1,102 @@
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm px-4">
-    <div class="container-fluid">
+<nav class="navbar navbar-dark navbar-dashboard">
+    <div class="container-fluid p-0">
 
-        <!-- Logo / Nome -->
-        <a class="navbar-brand fw-bold text-dark" href="#">
-            <span class="text-danger">MAGRAO</span> MOTOS
-        </a>
+        <!-- flex-nowrap impede que os itens fiquem um embaixo do outro -->
+        <div class="d-flex align-items-center gap-2 gap-sm-3 flex-nowrap w-100">
 
-        <!-- Botão Mobile -->
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarDashboard"
-            aria-controls="navbarDashboard"
-            aria-expanded="false"
-            aria-label="Abrir menu"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- LOGO -->
+            <div class="navbar-box logo-box">
+                <img src="img/logo.png" alt="Logo">
+            </div>
 
-        <!-- Conteúdo da Navbar -->
-        <div class="collapse navbar-collapse" id="navbarDashboard">
-
-            <!-- Links -->
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                    <a class="nav-link active fw-semibold" href="#">
-                        Dashboard
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Motos
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Clientes
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Vendas
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Estoque
-                    </a>
-                </li>
-
-            </ul>
-
-            <!-- Área do usuário -->
-            <div class="d-flex align-items-center gap-3">
-
-                <!-- Notificações -->
-                <button 
-                    class="btn btn-light rounded-circle position-relative"
-                    type="button"
-                >
-                    🔔
-                    <span class="position-absolute top-0 start-100 translate-middle 
-                                 badge rounded-pill bg-danger">
-                        3
-                    </span>
-                </button>
-
-                <!-- Usuário -->
-                <div class="d-flex align-items-center gap-2">
-
-                    <div 
-                        class="rounded-circle bg-danger text-white d-flex 
-                               align-items-center justify-content-center"
-                        style="width: 40px; height: 40px;"
-                    >
-                        M
-                    </div>
-
-                    <div class="d-none d-md-block">
-                        <div class="fw-semibold">Administrador</div>
-                        <small class="text-muted">Admin</small>
-                    </div>
-
-                </div>
-
+            <div class="navbar-box saldo-box">
+                <span>Saldo disponível</span>
+                <strong>R$ 10.000,00</strong>
             </div>
 
         </div>
+
     </div>
 </nav>
+
+<style>
+    .navbar-dashboard {
+        width: 100%;
+        height: 160px;
+        background: #a90000;
+        padding: 27px 20px;
+    }
+
+    .navbar-box {
+        height: 60px;
+        background: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* LOGO */
+    .logo-box {
+        width: 180px;
+        min-width: 110px; /* Impede que esmague demais */
+        justify-content: center;
+        padding: 8px;
+        flex-shrink: 0;   /* Mantém a proporção da logo */
+    }
+
+    .logo-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    /* SALDO */
+    .saldo-box {
+        width: 230px;
+        min-width: 130px; /* Garante visibilidade no mobile */
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+    }
+
+    .saldo-box span {
+        font-size: 20px;
+        color: #777;
+    }
+
+    .saldo-box strong {
+        font-size: 20px;
+        color: #222;
+        white-space: nowrap;
+    }
+
+    /* Ajuste para telas pequenas/mobile (F12) */
+    @media (max-width: 576px) {
+        .navbar-dashboard {
+            height: 90px;
+            padding: 10px 12px;
+        }
+
+        .navbar-box {
+            height: 10px;
+        }
+
+        .logo-box {
+            width: 120px;
+        }
+
+        .saldo-box {
+            width: auto;
+            padding: 0 10px;
+        }
+
+        .saldo-box span {
+            font-size: 10px;
+        }
+
+        .saldo-box strong {
+            font-size: 14px;
+        }
+    }
+</style>
