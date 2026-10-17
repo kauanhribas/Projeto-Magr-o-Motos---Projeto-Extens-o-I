@@ -1,0 +1,28 @@
+.section1 {
+    background-color: #370404cb;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.s1-titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.s1-quadros {
+    background-color: white;
+    color: #370404;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 10px;
+    border-radius: 7px;
+    opacity: 80%;
+}
+
+.s1-cont-quad {
+    margin-bottom: 75px;
+}

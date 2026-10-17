@@ -11,6 +11,8 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
 
+    <!-- Styles do CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet"/>
 </head>
 
 <body>
