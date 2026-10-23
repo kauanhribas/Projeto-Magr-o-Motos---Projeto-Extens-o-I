@@ -4,4 +4,6 @@
 
 <?php include "section1.php"?>
 
+<?php include "navbar.php"?>
+
 <?php include "footer.php"?>
