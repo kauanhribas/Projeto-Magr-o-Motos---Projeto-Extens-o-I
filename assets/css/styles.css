@@ -1,3 +1,6 @@
+
+/* SECTION 1 */
+
 .section1 {
     background-color: #370404cb;
     color: white;
@@ -11,7 +14,12 @@
     margin-bottom: 5px;
 }
 
-.s1-quadros {
+.s1-titulo > h1 {
+    height: 100%;
+    margin: 0;
+}
+
+.quadros > .row {
     background-color: white;
     color: #370404;
     margin-left: 1px;
@@ -23,6 +31,26 @@
     opacity: 80%;
 }
 
-.s1-cont-quad {
+.row > h1 {
     margin-bottom: 75px;
 }
+
+/* NAVBAR */
+
+.nav-section {
+    background-color: red;
+    padding: 16px;
+    height: 10vh;
+}
+
+.col-4 > div {
+    height: 100%;
+    width: 80%;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.col-4 > div > a {
+    width: 100%;
+    height: 100%;
+} 
