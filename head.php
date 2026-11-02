@@ -13,7 +13,7 @@
 
     <!-- Styles do CSS -->
     <link href="assets/css/styles.css" rel="stylesheet"/>
-    <link href="assets/css/styles1.css" rel="stylesheet"/>
+
 </head>
 
 <body>
